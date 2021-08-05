@@ -1,0 +1,18 @@
+/* COMPONENTS */
+/* HOVER FOCUS CURRENT */
+.nav-link .current {
+    color: var(--spec-accent-color);
+    position: relative;  
+}
+
+.link:hover,
+.link:focus {
+    color: var(--spec-accent-color);    
+} 
+
+.logo:hover,
+.logo:focus {
+    color: var(--spec-accent-color);
+}
+/* END HOVER FOCUS CURRENT */
+/* END COMPONENTS */
