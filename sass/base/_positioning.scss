@@ -59,8 +59,16 @@
 .section-item-four {
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% / 4) - 30px);
+
+    @media screen and (min-width:768px) {
+        flex-basis: calc((100% / 2) - 30px);
+    }
+
+    @media screen and (min-width:1200px) {
+        flex-basis: calc((100% / 4) - 30px);
+    }
 }
+
 
 .section-item-three {
     margin-top: 30px;
