@@ -6,28 +6,59 @@
             var(--hero-bg-overlay),
             var(--hero-bg-overlay)
             ),
-            url(../imgs/desk-cap/cap.jpg);
+            url(../imgs/mob-cap/cap.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 200px 0;
+    padding: 118px 0;
+
+    @media screen and (min-width:767,9px) {
+    background-image:
+        linear-gradient(
+            0deg,
+            var(--hero-bg-overlay),
+            var(--hero-bg-overlay)
+            ),
+            url(../imgs/tabl-cap/cap.jpg);
+    }
+
+    @media screen and (min-width:1200px) {
+        background-image:
+            linear-gradient(
+                0deg,
+                var(--hero-bg-overlay),
+                var(--hero-bg-overlay)
+                ),
+                url(../imgs/desk-cap/cap.jpg);
+        }
+        padding: 200px 0;
 }
 
 .hero-wrap {
-    width: 550px;
+    width: 360px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+
+    @media screen and (min-width:1200px) {
+        width: 550px;
+    }
 }
 
 .hero-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    /*line-height: 60px; */
+    font-size: 26px;
+    line-height: 1.62;
+    /*line-height: 42px; */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--norm-accent-color);
     margin-bottom: 30px;
+
+    @media screen and (min-width:1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    /*line-height: 60px; */
+    }
 }
 /* END HERO */
