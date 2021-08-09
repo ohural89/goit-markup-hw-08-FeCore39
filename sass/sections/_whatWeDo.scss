@@ -1,4 +1,10 @@
 /* WHAT WE DO */
+.what-we-do.is-hidden {
+    @media screen and (min-width: 480px) and (min-width:768px) {
+        display: none;
+    }
+}
+
 .what-we-do-text-overlay {
     position: absolute;
     display: flex;
