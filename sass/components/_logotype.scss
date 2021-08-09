@@ -18,6 +18,11 @@
 
 .footer-logo {
     margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: unset;
+    }
 }
 
 .logo-footer-accent {
