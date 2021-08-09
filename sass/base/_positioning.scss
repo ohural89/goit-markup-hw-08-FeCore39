@@ -115,14 +115,23 @@
 .section-filters {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
 
     @media screen and (min-width:768px) and (min-width:1200px) {
         justify-content: center;
+        margin-bottom: 50px;
     }
 }
 
 .filters-btn:not(:last-child) {
     margin-right: 8px;
+}
+
+.filters-btn {
+    margin-right: 8px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width:768px) and (min-width:1200px) {
+        margin-bottom: 50px;
+    }
 }
 /* END POSITIONING */
