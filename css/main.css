@@ -291,6 +291,13 @@ p {
   align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-subscr-wrap {
+    flex-direction: unset;
+    align-items: unset;
+  }
+}
+
 /* LOGOTYPE */
 .logo {
   font-family: var(--spec-font);
