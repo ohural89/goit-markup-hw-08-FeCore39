@@ -39,7 +39,7 @@
         fill: var(--spec-accent-color);
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (min-width:1200px) {
         display: none;
     }
 }
@@ -72,38 +72,7 @@
 }
 /* END portfolio.html BUTTONS */
 
-.footer-subscr-btn {
-    width: 200px;
-    height: 50px;
-    background: var(--spec-accent-color);
-    box-shadow: 0px 4px 4px var(--subsrc-box);
-    border-radius: 4px;
-    border: none;
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    line-height: 1.9;
-    text-align: center;
-    align-items: center;
-    color: var(--norm-accent-color);
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    padding: 10px 40px;
 
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        background-color: var(--hero-btn-hover);
-    }
-
-    @media screen and (min-width:1200px) {
-        margin-left: 12px;
-
-    }
-}
 
 /* MODAL WINDOW BTNs*/
 .close-button {
