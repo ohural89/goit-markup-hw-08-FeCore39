@@ -46,7 +46,8 @@
     padding-left: 4px;
 }
 
-.user-checkbox:checked + .custom-checkbox {
+.user-checkbox:checked + .custom-checkbox,
+.user-checkbox:focus + .custom-checkbox {
     background-image: url(../sprite/m-window-icon-check.svg);
     background-size: cover;
     background-position: center;
