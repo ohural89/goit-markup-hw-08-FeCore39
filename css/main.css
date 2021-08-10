@@ -370,7 +370,7 @@ p {
   background-color: var(--hero-btn-hover);
 }
 
-.mob-menu-burger-style {
+.mob-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,12 +381,12 @@ p {
   height: 40px;
 }
 
-.mob-menu-burger-style:hover, .mob-menu-burger-style:focus {
+.mob-btn:hover, .mob-btn:focus {
   fill: var(--spec-accent-color);
 }
 
 @media screen and (min-width: 768px) {
-  .mob-menu-burger-style {
+  .mob-btn {
     display: none;
   }
 }
