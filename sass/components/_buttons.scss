@@ -24,7 +24,7 @@
     }
 }
 
-.mobile-btn {
+.mob-menu-burger-style {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,6 @@
     width: 40px;
     height: 40px;
 
-
     &:hover,
     &:focus {
         fill: var(--spec-accent-color);
@@ -45,8 +44,6 @@
         display: none;
     }
 }
-
-
 /* END index.html BUTTONS */
 
 /* portfolio.html BUTTONS */
