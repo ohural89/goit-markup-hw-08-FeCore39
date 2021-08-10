@@ -374,7 +374,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 2px solid green;
   background: transparent;
   border: none;
   padding: 0;
