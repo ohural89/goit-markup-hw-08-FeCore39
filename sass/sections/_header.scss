@@ -4,6 +4,53 @@
     border-color: var(--header-border);
 }
 
+.header-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-logo {
+    padding: 25px 0;
+    margin-right: 93px;
+    align-items: center;
+}
+
+.nav-list,
+.nav-contacts {
+    display: flex;
+
+    @media screen and (max-width: 767.9px) {
+        display: none;
+    }
+}
+
+.nav-contacts .header-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.nav-contacts {
+    @media screen and (min-width:768px) and (max-width: 1199.9) {
+        flex-direction: column;    
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+    }
+}
+
+.nav-link .current {
+    color: var(--spec-accent-color);
+    position: relative;  
+}
+
 .nav-text,
 .header-contacts {
     position: relative;
@@ -17,9 +64,20 @@
     color: var(--titles-color);
     padding: 32px 0;
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(color);
+}
+
+.active-line::after {
+    @media screen and (min-width:768px) and (min-width: 1200px){
+        display: block;
+        position: absolute;
+        content: " ";
+        width: 100%;
+        height: 4px;
+        background-color: var(--spec-accent-color);
+        border-radius: 2px;
+        bottom: -2px;
+    }
 }
 
 .contact-item {
@@ -30,9 +88,7 @@
 .header-contacts {
     color: inherit;
     
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(color);
 
     &:not(:last-child) {
         @media screen and (max-width:767.9px) {
@@ -45,13 +101,21 @@
     fill: var(--text-color);
     margin-right: 10px;
 
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation(fill);
 }
 
 .header-contacts:hover .contacts-icons,
 .header-contacts:focus .contacts-icons{
     fill: var(--spec-accent-color);
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-item:not(:first-child)  {
+    @media screen and (min-width:1200px) {
+        margin-left: 50px;
+    }
 }
 /* END HEADER */

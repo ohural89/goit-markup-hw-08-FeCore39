@@ -28,61 +28,8 @@
     padding-bottom: 47px;
 }
 
-.header-position {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-nav {
-    display: flex;
-}
-
-.header-logo {
-    padding: 25px 0;
-    margin-right: 93px;
-    align-items: center;
-}
-
-.nav-list,
-.nav-contacts {
-    display: flex;
-
-    @media screen and (max-width: 767.9px) {
-        display: none;
-    }
-}
-
-.nav-contacts .header-contacts {
-    display: flex;
-    align-items: center;
-}
-
-.nav-contacts {
-    @media screen and (min-width:768px) and (max-width: 1199.9) {
-        flex-direction: column;    
-    }
-
-    @media screen and (min-width:1200px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;    
-    }
-}
-
-.nav-link:not(:last-child) {
-    margin-right: 50px;
-}
-
-.contact-item:not(:first-child)  {
-    @media screen and (min-width:1200px) {
-        margin-left: 50px;
-    }
-}
-
 // .section-item-four:not(:last-child) 
 // margin-bottom: 30px; ламає верстку на 768 & 1200
-
 
 .section-list {
     @media screen and (min-width: 768px) {

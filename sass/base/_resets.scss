@@ -1,5 +1,3 @@
-
-
 /* RESET STYLES */
 body {
     font-family: var(--main-font);
@@ -35,6 +33,11 @@ p {
 .link {
     text-decoration: none;
     display: block;
+
+    &:hover,
+    &:focus {
+        color: var(--spec-accent-color);    
+    }
 }
 
 .btn {
