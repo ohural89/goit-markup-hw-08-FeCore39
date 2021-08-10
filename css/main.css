@@ -149,17 +149,40 @@ p {
   display: flex;
 }
 
+@media screen and (max-width: 767.9px) {
+  .nav-list,
+  .nav-contacts {
+    display: none;
+  }
+}
+
 .nav-contacts .header-contacts {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9) {
+  .nav-contacts {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .nav-link:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-item:not(:first-child) {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contact-item:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -174,12 +197,6 @@ p {
 .section-item-four {
   margin-top: 30px;
   margin-left: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .section-item-four:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -354,11 +371,25 @@ p {
 }
 
 .mobile-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid green;
   background: transparent;
   border: none;
   padding: 0;
   width: 40px;
   height: 40px;
+}
+
+.mobile-btn:hover, .mobile-btn:focus {
+  fill: var(--spec-accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
 }
 
 /* END index.html BUTTONS */
@@ -550,11 +581,11 @@ p {
   line-height: 1.14;
   /*line-height: 16px;*/
   letter-spacing: 0.02em;
-  padding: 32px 0;
 }
 
 .nav-text {
   color: var(--titles-color);
+  padding: 32px 0;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -570,6 +601,12 @@ p {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767.9px) {
+  .header-contacts:not(:last-child) {
+    padding-bottom: 10px;
+  }
 }
 
 .contacts-icons {
@@ -1024,17 +1061,19 @@ p {
 /* END PORTFOLIO */
 /* MOBILE MENU*/
 .mob-menu-container {
-  position: absolute;
-  background: var(--norm-accent-color);
-  width: 100vw;
-  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background: var(--norm-accent-color);
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-menu-content-wrap.is-hidden {
-  display: none;
+.mob-menu-container.is-open {
+  transform: translateX(0);
 }
 
 .mob-menu-content-wrap {

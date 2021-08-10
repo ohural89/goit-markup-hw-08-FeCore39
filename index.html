@@ -15,7 +15,7 @@
 
     <body>
         <!-- HEADER -->
-        <!-- <header class="header-border">
+        <header class="header-border">
             <div class="container header-position">
                 <nav class="header-nav">
                     <a href="./index.html" class="link header-logo"><span class="logo logo-accent">Web</span><span class="logo">Studio</span></a>
@@ -40,27 +40,27 @@
                             </svg>+38 096 111 11 11
                         </a>
                     </li>
-                </ul> -->
+                </ul>
 
 
 
-                <button class="btn mobile-btn" data-menu-button type="button">
-                    <svg class="mobile-btn-style" width="40" height="40">
+                <button class="btn mobile-btn js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="mob-menu-burger-style" width="40" height="40">
                         <use href="./sprite/sprite.svg#mob-menu-burger"></use>
                     </svg>
                 </button>
 
-                <div class="mob-menu-container visually-hidden" data-menu>
-                    <div class="mob-menu-content-wrap">
+                <div id="mobile-menu" class="mob-menu-container js-menu-container">
 
-                        <button type="button" class="mob-menu-close-btn" data-menu-close>
+                    <div class="mob-menu-content-wrap">
+                        <button type="button" class="mob-menu-close-btn js-close-menu">
                             <svg class="mob-menu-close-btn-cross" width="40" height="40">
                                 <use href="./sprite/sprite.svg#cross-btn-close-mob-menu"></use>
                             </svg>
                         </button>
 
                         <div class="mob-menu-wrap-one">
-                            <ul class="mob-menu-links-list">
+                            <ul class="list mob-menu-links-list">
                                 <li class="mob-menu-links">
                                     <a class="link current active-line mob-menu-link-item" href="index.html">Studio</a>
                                 </li>
@@ -74,11 +74,11 @@
                         </div>
 
                         <div class="mob-menu-wrap-two">
-                            <ul class="mob-menu-contacts">
+                            <ul class="list mob-menu-contacts">
                                 <li><a class="link mob-menu-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
                                 <li><a class="link mob-menu-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                             </ul>
-                            <ul class="mob-menu-soclinks">
+                            <ul class="list mob-menu-soclinks">
                                 <li><a class="mob-menu-soc-item" href="#">Instagram</a></li>
                                 <li><a class="mob-menu-soc-item" href="#">Twitter</a></li>
                                 <li><a class="mob-menu-soc-item" href="#">Facebook</a></li>
@@ -617,8 +617,12 @@
             </div>
         </div>
         
+        
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script src="./scripts/mobile-menu.js"></script>
         <script src="./scripts/modal.js"></script>
-        <script src="./scripts/menu.js"></script>
 
     </body>
 </html>

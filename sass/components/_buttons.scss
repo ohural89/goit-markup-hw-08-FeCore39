@@ -25,11 +25,25 @@
 }
 
 .mobile-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid green;
     background: transparent;
     border: none;
     padding: 0;
     width: 40px;
     height: 40px;
+
+
+    &:hover,
+    &:focus {
+        fill: var(--spec-accent-color);
+    }
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
 }
 
 

@@ -12,10 +12,10 @@
     line-height: 1.14;
     /*line-height: 16px;*/
     letter-spacing: 0.02em;
-    padding: 32px 0;
 }
 .nav-text {
     color: var(--titles-color);
+    padding: 32px 0;
 
     transition-property: color;
     transition-duration: 250ms;
@@ -33,6 +33,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+        @media screen and (max-width:767.9px) {
+            padding-bottom: 10px;
+        }
+    }
 }
 
 .contacts-icons {
