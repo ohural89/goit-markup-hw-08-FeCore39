@@ -1,0 +1,45 @@
+
+
+/* RESET STYLES */
+body {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    background-color: var(--norm-accent-color);
+    color: var(--text-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    display: block;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+/* END RESET STYLES */

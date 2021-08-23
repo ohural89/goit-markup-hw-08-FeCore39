@@ -1,0 +1,26 @@
+/* LOGOTYPE */
+.logo {
+    font-family: var(--spec-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    /* line-height: 31px; */
+    color: var(--logo-base-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-accent {
+    color: var(--spec-accent-color);
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.logo-footer-accent {
+    color: var(--norm-accent-color);
+}
+/* END LOGOTYPE */

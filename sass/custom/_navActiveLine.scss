@@ -1,0 +1,12 @@
+/* NAV ACTIVE LINE */
+.active-line::after {
+    display: block;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: var(--spec-accent-color);
+    border-radius: 2px;
+    bottom: -2px;
+}
+/* END NAV ACTIVE LINE */

@@ -1,0 +1,71 @@
+/* SOCIALS */
+/* ourteam */
+.our-team-social-icons {
+    display: inline-flex;
+}
+
+.our-team-social-icons .social-icon-item:not(:last-child) {
+    padding-right: 10px;
+}
+
+.social-icons-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-box:hover,
+.social-icons-box:focus {
+    background-color: var(--spec-accent-color);
+}
+
+.social-icons {
+    fill: var(--icon-main-fill);
+    
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons-box:hover .social-icons,
+.social-icons-box:focus .social-icons {
+    fill: var(--norm-accent-color);
+}
+
+/* footer */
+.footer-socials {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 206px;
+} 
+
+.footer-socials-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--footer-soc-bg);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-icon {
+    fill: var(--norm-accent-color);
+}
+
+.footer-socials-box:hover,
+.footer-socials-box:focus {
+    background-color: var(--spec-accent-color);
+}

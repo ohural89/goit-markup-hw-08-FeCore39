@@ -1,0 +1,97 @@
+/* MODAL WINDOW INPUT FORM */
+.m-window-input-form {
+    width: 528px;
+    min-height: 581px;
+    background: var(--norm-accent-color);
+    box-shadow:
+        0px 1px 3px var(--m-window-color-one),
+        0px 1px 1px var(--m-window-color-two),
+        0px 2px 1px var(--m-window-color-three);
+    border-radius: 4px;
+}
+.modal-input-position {
+    padding: 40px;
+}
+
+.m-window-request-text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--titles-color);
+    margin-bottom: 12px;
+}
+
+.m-window-input-label {
+    position: relative;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+    display: block;
+
+    margin-bottom: 10px;
+}
+
+.m-window-input-icon-position {
+    position: relative;
+    display: block;
+    
+    margin-top: 4px;
+}
+
+.m-window-input-row {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--m-window-input-row);
+    box-sizing: border-box;
+    border-radius: 4px;
+    /* margin-bottom: 28px;*/
+    padding-left: 42px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.m-window-input-row:focus,
+.m-window-input-textarea:focus {
+    border-color: var(--spec-accent-color);
+    outline: none;
+}
+
+.m-window-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: block;
+    width: 18px;
+    height: 18px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.m-window-input-row:focus + .m-window-input-icon {
+    fill: var(--spec-accent-color);
+}
+
+.m-window-input-textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    resize: none;
+    border: 1px solid var(--m-window-input-row);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.m-window-input-textarea::placeholder {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--text-color-transp);
+}
+/* END MODAL WINDOW INPUT FORM */

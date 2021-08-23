@@ -1,0 +1,109 @@
+/* FOOTER */
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+/* FOOTER ADDRESS */
+.footer-bg-color {
+    background-color: var(--footer-bg);
+    padding: 60px 0;
+}
+
+.footer-address,
+.footer-contacts {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    /*line-height: 24px; */
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address {
+    color: var(--norm-accent-color);
+}
+.footer-contacts {
+    color: var(--footer-contact-text-color);
+}
+/* END FOOTER ADDRESS */
+
+/* FOOTER JOIN IN! */
+.footer-social-links {
+    margin-left: 70px;
+}
+
+.slogan-for-social {
+    color: var(--norm-accent-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+/* END FOOTER JOIN IN! */
+
+/* FOOTER SUBSCRIPTION */
+.footer-subscr {
+    margin-left: 93px;
+}
+
+.subscr-title {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    /*line-height: 16px;*/
+    color: var(--norm-accent-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-subscr-wrap {
+    display: flex;
+}
+
+.label-position {
+    margin-right: 12px;
+}
+
+.subscr-input-style {
+    color: var(--norm-accent-color);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    height: 50px;
+    width: 358px;
+    filter: drop-shadow(0px 4px 4px var(--subsrc-box));
+    border: 1px solid var(--subsrc-box-border);
+    background: transparent;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 16px;
+}
+.subscr-input-style:focus {
+    border: 1px solid var(--spec-accent-color);
+}
+
+.footer-subscr-icon {
+    margin-left: 10px;
+    fill: var(--norm-accent-color);
+}
+
+.subscr-input-style::placeholder {
+    display: flex;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    align-items: center;
+    color: var(--footer-contact-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* END OF FOOTER SUBSCRIPTION */
+/* END FOOTER */

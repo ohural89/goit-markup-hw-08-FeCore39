@@ -1,0 +1,51 @@
+/* HEADER */
+.header-border {
+    border-bottom: 1px solid;
+    border-color: var(--header-border);
+}
+
+.nav-text,
+.header-contacts {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    /*line-height: 16px;*/
+    letter-spacing: 0.02em;
+    padding: 32px 0;
+}
+.nav-text {
+    color: var(--titles-color);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts {
+    color: inherit;
+    
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-icons {
+    fill: var(--text-color);
+    margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts:hover .contacts-icons,
+.header-contacts:focus .contacts-icons{
+    fill: var(--spec-accent-color);
+}
+/* END HEADER */

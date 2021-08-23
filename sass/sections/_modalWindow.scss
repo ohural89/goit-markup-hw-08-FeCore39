@@ -1,0 +1,31 @@
+/* MODAL wINDOW */
+.modal-window-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--m-window-color-three);
+    z-index: 10;
+}
+
+.modal-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--norm-accent-color);
+    box-shadow:
+        0px 1px 3px var(--m-window-color-one),
+        0px 1px 1px var(--m-window-color-two),
+        0px 2px 1px var(--m-window-color-three);
+    border-radius: 4px;
+}
+
+.animate__bounceIn {
+    animation-iteration-count: 1;
+    animation-duration: 1500ms;
+}
+/* END MODAL wINDOW */
