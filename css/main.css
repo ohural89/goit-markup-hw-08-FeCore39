@@ -94,21 +94,9 @@ p {
 
 /* END RESET STYLES */
 /* POSITIONING */
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.features-section {
-  padding-top: 94px;
-  padding-bottom: 47px;
 }
 
 .header-position {
@@ -485,6 +473,11 @@ p {
 
 /* END TITLES TEXT STYLE */
 /* FEATURES */
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
 .features-icon-wrp {
   display: flex;
   justify-content: center;
@@ -1005,4 +998,10 @@ p {
 }
 
 /* END MODAL WINDOW INPUT FORM */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  width: 1200px;
+}
 /*# sourceMappingURL=main.css.map */
