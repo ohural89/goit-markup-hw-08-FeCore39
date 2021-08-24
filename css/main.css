@@ -90,6 +90,12 @@ button {
 }
 
 /* END of visually hidden */
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;

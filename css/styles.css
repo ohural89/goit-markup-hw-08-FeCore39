@@ -717,11 +717,7 @@
     height: 11px;
 }
 
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
+
 /* END MODAL WINDOW */
 /* MODAL WINDOW INPUT FORM */
 .m-window-input-form {
