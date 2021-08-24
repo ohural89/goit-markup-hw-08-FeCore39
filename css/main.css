@@ -104,12 +104,28 @@ button {
   background-color: var(--spec-accent-color);
   box-shadow: 0px 4px 4px var(--box-shadow-bottom);
   border-radius: 4px;
-  padding: 10px 32px;
 }
 
 .btn:hover, .btn:focus {
   background-color: var(--hover-accent-color);
 }
 
-/* END HERO */
+.hero-btn-style {
+  padding: 10px 32px;
+}
+
+.footer-subscr-btn {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 10px 29px;
+}
+
+.m-window-send-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+}
 /*# sourceMappingURL=main.css.map */
