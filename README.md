@@ -10,6 +10,17 @@ background: rgba(24, 140, 232, 1);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 
+/* кнопки стилі тексту*/ + mixin btn-text-style
+mobile-tablet-desktop
+font-family: Roboto;
+font-style: normal;
+font-weight: 700 bold;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: rgba(255, 255, 255, 1) #FFFFFF;
+
+
 
 /* фільтри портфоліо normal */
 
