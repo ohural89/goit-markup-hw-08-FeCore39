@@ -1,0 +1,29 @@
+/* REGULAR CLIENTS */
+.regular-clients-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--icon-main-fill);
+    border-radius: 4px;
+    width: 100%;
+    height: 92px;
+
+    @include custom-animation(border);
+}
+
+.regular-clients-icon {
+    fill: var(--icon-main-fill);
+    @include custom-animation(fill);
+}
+
+.regular-clients-box:hover,
+.regular-clients-box:focus {
+    border: 1px solid var(--spec-accent-color);
+}
+
+.regular-clients-box:hover .regular-clients-icon,
+.regular-clients-box:focus .regular-clients-icon {
+    fill: var(--spec-accent-color);
+}
+/* END REGULAR CLIENTS*/ 
