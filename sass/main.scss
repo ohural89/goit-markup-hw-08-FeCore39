@@ -5,9 +5,12 @@
 @import "utils/is-hidden";
 
 @import "base/adaptive";
+@import "base/typography";
 
 
 @import "sections/header";
+@import "sections/features";
+@import "sections/whatWeDo";
 
 
 @import "components/buttons";

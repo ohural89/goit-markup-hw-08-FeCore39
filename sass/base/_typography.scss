@@ -1,0 +1,37 @@
+/* TYPOGRAPHY */
+.section-title {
+    color: var(--titles-base-color);
+    margin-bottom: 50px;
+    text-align: center;
+    @include title-text-style (28px, 1.18);
+
+    @media screen and (min-width:1200px) {
+        @include title-text-style (36px, 1.17)
+    }
+}
+
+.features-suptitle {
+    color: var(--titles-base-color);
+    @include title-text-style (14px, 1.14);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        text-align: left;
+    }
+}
+
+.features-text {
+    font-size: 14px;
+    line-height: 1.7;
+    /*line-height: 24px; */
+}
+
+.what-we-do-text {
+    color: var(--base-accent-color);
+    @include title-text-style (14px, 1.14);
+    text-transform: uppercase;
+    text-align: center;
+}
+/* END of TYPOGRAPHY */

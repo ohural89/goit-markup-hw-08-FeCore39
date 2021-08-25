@@ -122,6 +122,97 @@ a {
   }
 }
 
+.section-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.section-item-four {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .section-item-four {
+    flex-basis: calc((100% / 2) - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-item-four {
+    flex-basis: calc((100% / 4) - 30px);
+  }
+}
+
+.section-item-three {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% / 3) - 30px);
+  position: relative;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .what-we-do-section {
+    display: none;
+  }
+}
+
+/* TYPOGRAPHY */
+.section-title {
+  color: var(--titles-base-color);
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.18;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+  }
+}
+
+.features-suptitle {
+  color: var(--titles-base-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-suptitle {
+    text-align: left;
+  }
+}
+
+.features-text {
+  font-size: 14px;
+  line-height: 1.7;
+  /*line-height: 24px; */
+}
+
+.what-we-do-text {
+  color: var(--base-accent-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* END of TYPOGRAPHY */
 /* HEADER */
 .header-border {
   border-bottom: 1px solid;
@@ -238,6 +329,40 @@ a {
 }
 
 /* END HEADER */
+/* FEATURES */
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.features-icon-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--spec-bg-color);
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+/* WHAT WE DO */
+.what-we-do-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.what-we-do-text-overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background: var(--section-text-bg-transp);
+  bottom: 0;
+}
+
+/* END WHAT WE DO */
 /* buttons */
 .btn {
   font-size: 16px;
