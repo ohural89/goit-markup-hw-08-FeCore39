@@ -66,7 +66,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--norm-accent-color);
+    color: var(--base-accent-color);
     margin-bottom: 30px;
 }
 /* END HERO */
@@ -76,7 +76,7 @@
 
 /* OUR TEAM */
 .section-box {
-    background: var(--norm-accent-color);
+    background: var(--base-accent-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
                 0px 1px 1px rgba(0, 0, 0, 0.14),   
                 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -144,7 +144,7 @@
 
 .social-icons-box:hover .social-icons,
 .social-icons-box:focus .social-icons {
-    fill: var(--norm-accent-color);
+    fill: var(--base-accent-color);
 }
 /* END OUR TEAM */
 
@@ -223,7 +223,7 @@
 }
 
 .footer-social-icon {
-    fill: var(--norm-accent-color);
+    fill: var(--base-accent-color);
 }
 
 .footer-socials-box:hover,
@@ -277,7 +277,7 @@
 
 .footer-subscr-icon {
     margin-left: 10px;
-    fill: var(--norm-accent-color);
+    fill: var(--base-accent-color);
 }
 
 .subscr-input-style::placeholder {
