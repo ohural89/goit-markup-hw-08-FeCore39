@@ -1,0 +1,36 @@
+/* LOGOTYPE */
+.header-logo {
+    padding: 25px 0;
+    margin-right: 93px;
+    align-items: center;
+}
+
+.logo {
+    color: var(--logo-desktop-color);
+    @include title-text-style (24px, 1.17);
+    font-family: var(--spec-font);
+
+    @include custom-animation(color);
+
+    @media screen and (min-width:1200px) {
+        @include title-text-style (26px, 1.19);
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--spec-accent-color);
+    }
+}
+
+.logo-accent {
+    color: var(--spec-accent-color);
+}
+
+.logo-footer-accent {
+    color: var(--base-accent-color);
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+/* END LOGOTYPE */
