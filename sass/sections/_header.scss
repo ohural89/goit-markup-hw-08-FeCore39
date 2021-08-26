@@ -14,12 +14,6 @@
     display: flex;
 }
 
-.header-logo {
-    padding: 25px 0;
-    margin-right: 93px;
-    align-items: center;
-}
-
 .nav-menu,
 .nav-contacts {
     display: flex;
@@ -37,30 +31,6 @@
 .contact-item:not(:first-child)  {
     margin-left: 50px;
 }
-
-.logo {
-    font-family: var(--spec-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    /* line-height: 31px; */
-    color: var(--logo-base-color);
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo-accent {
-    color: var(--spec-accent-color);
-}
-
-.logo-footer-accent {
-    color: var(--norm-accent-color);
-}
-/* END LOGOTYPE */
-
-
 
 .nav-text,
 .header-contacts {
