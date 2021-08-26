@@ -1,4 +1,9 @@
 /* TYPOGRAPHY */
+.link:hover,
+.link:focus {
+    color: var(--spec-accent-color);    
+}
+
 .section-title {
     color: var(--titles-base-color);
     margin-bottom: 50px;
@@ -33,5 +38,33 @@
     @include title-text-style (14px, 1.14);
     text-transform: uppercase;
     text-align: center;
+}
+
+.footer-address,
+.footer-contacts {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    @include custom-animation(color);
+}
+
+.footer-address {
+    color: var(--base-accent-color);
+}
+
+.footer-contacts {
+    color: var(--footer-contact-text-color);
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.slogan-for-social,
+.subscr-title {
+    color: var(--base-accent-color);
+    @include title-text-style (14px, 1.14);
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 /* END of TYPOGRAPHY */
