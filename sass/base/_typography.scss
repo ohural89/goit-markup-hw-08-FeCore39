@@ -46,6 +46,11 @@
     font-size: 14px;
     line-height: 1.7;
     @include custom-animation(color);
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
 
 .footer-address {
@@ -66,5 +71,10 @@
     @include title-text-style (14px, 1.14);
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
 /* END of TYPOGRAPHY */

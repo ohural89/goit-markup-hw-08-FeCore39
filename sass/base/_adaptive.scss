@@ -87,6 +87,16 @@
     }
 }
 
+
+@media screen and (min-width:768px) {
+    .tablet-flex {
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        width: 738px;
+    }
+}
+
 .footer-social-wrap {
     margin-bottom: 60px;
     display: flex;

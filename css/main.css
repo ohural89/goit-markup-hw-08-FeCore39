@@ -141,6 +141,13 @@ a {
 
 .footer-logo {
   margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: left;
+  }
 }
 
 /* END LOGOTYPE */
@@ -280,14 +287,23 @@ a {
   }
 }
 
-.footer-section {
+.footer-logo-contacts {
   text-align: center;
   margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-section {
+  .footer-logo-contacts {
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-flex {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    width: 738px;
   }
 }
 
@@ -390,6 +406,14 @@ a {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address,
+  .footer-contacts {
+    text-align: left;
+  }
 }
 
 .footer-address {
@@ -413,6 +437,14 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .slogan-for-social,
+  .subscr-title {
+    text-align: left;
+  }
 }
 
 /* END of TYPOGRAPHY */
@@ -587,6 +619,7 @@ a {
   display: flex;
   justify-content: space-between;
   width: 206px;
+  text-align: center;
 }
 
 .footer-socials-box {
