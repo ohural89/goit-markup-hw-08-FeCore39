@@ -73,21 +73,16 @@
 }
 
 .m-window-request-text {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    @include custom-text-style(20px, 700, 0.03, 1.6);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--titles-base-color);
     margin-bottom: 12px;
 }
 
 .m-window-input-label {
     position: relative;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+    @include custom-text-style(12px, 400, 0.01, 1.16);
+    
     color: var(--text-color);
     display: block;
 
@@ -147,10 +142,7 @@
 }
 
 .m-window-input-textarea::placeholder {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
+    @include custom-text-style(12px, 400, 0.01, 1.16);
     color: var(--text-color-transp);
 }
 
@@ -173,10 +165,7 @@
 }
 
 .m-window-terms-agreement {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include custom-text-style(14px, 400, 0.03, 1.7);
     color: var(--text-color);
     margin-left: 10px;
     

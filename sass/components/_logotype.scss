@@ -7,13 +7,13 @@
 
 .logo {
     color: var(--logo-desktop-color);
-    @include title-text-style (24px, 1.17);
+    @include custom-text-style(24px, 700, 0.03, 1.17);
     font-family: var(--spec-font);
 
     @include custom-animation(color);
 
     @media screen and (min-width:1200px) {
-        @include title-text-style (26px, 1.19);
+        @include custom-text-style(26px, 700, 0.03, 1.19);
     }
 
     &:hover,

@@ -44,10 +44,8 @@
 
 .subscr-input-style {
     color: var(--base-accent-color);
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include custom-text-style(16px, 400, 0.03, 1.25);
+    
     height: 50px;
     width: 290px;
     filter: drop-shadow(0px 4px 4px var(--input-footer-text-style));
@@ -76,13 +74,11 @@
 }
 
 .subscr-input-style::placeholder {
-    display: flex;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    align-items: center;
+    @include custom-text-style(16px, 400, 0.03, 1.25);
     color: var(--footer-contact-text-color);
+
+    display: flex;
+    align-items: center;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* END OF FOOTER SUBSCRIPTION */

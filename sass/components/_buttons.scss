@@ -1,11 +1,11 @@
 /* buttons */
 .btn {
-    @include btn-text-style(1.88);
+    @include custom-text-style(16px, 700, 0.06, 1.88);
     color: var(--base-accent-color);
 
     @include custom-animation(background-color);
     background-color: var(--spec-accent-color);
-    box-shadow: 0px 4px 4px var(--box-shadow-bottom);
+    box-shadow: 0px 4px 4px var(--shadows-six);
     border-radius: 4px;
 
     &:hover,
