@@ -267,6 +267,21 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-flex {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
 .footer-logo-contacts {
   text-align: center;
   margin-bottom: 60px;
@@ -275,17 +290,36 @@ a {
 @media screen and (min-width: 1200px) {
   .footer-logo-contacts {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
-.footer-social-wrap {
-  margin-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .tablet-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .tablet-flex {
+    justify-content: unset;
+    width: unset;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-social-wrap {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .footer-social-wrap {
     flex-direction: row;
     flex-wrap: wrap;
@@ -293,10 +327,30 @@ a {
   }
 }
 
-.footer-subscr-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-subscr-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscr-wrap {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer-subscr {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-subscr {
+    margin-left: 93px;
+  }
 }
 
 /* TYPOGRAPHY */
@@ -634,6 +688,12 @@ a {
 @media screen and (min-width: 768px) {
   .subscr-input-style {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscr-input-style {
+    width: 358px;
   }
 }
 
