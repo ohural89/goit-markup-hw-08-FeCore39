@@ -41,7 +41,9 @@
     right: 8px;
     border: 1px solid var(--shadows-three);
     border-radius: 50%;
-    @include custom-animation(fill, border);
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover,
