@@ -608,21 +608,36 @@ a {
 }
 
 .hero-wrap {
-  width: 550px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-wrap {
+    width: 550px;
+  }
+}
+
 .hero-title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: 0.06em;
-  line-height: 1.36;
+  line-height: 1.62;
   color: var(--base-accent-color);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36;
+  }
 }
 
 /* END HERO */
