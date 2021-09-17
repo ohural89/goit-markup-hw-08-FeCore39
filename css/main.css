@@ -215,6 +215,11 @@ ol {
   }
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-list {
   display: flex;
   flex-wrap: wrap;
@@ -371,7 +376,6 @@ ol {
 .section-filters {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
   margin-bottom: 50px;
 }
 
@@ -696,11 +700,6 @@ ol {
 }
 
 /* WHAT WE DO */
-.what-we-do-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .what-we-do-text-overlay {
   position: absolute;
   display: flex;
