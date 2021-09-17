@@ -45,37 +45,37 @@
             </div>
 
             <div class="mobile-menu">
-                <nav class="mob-menu-nav">
+                <div class="mob-menu-nav">
                     <a href="./index.html" class="link header-logo"><span class="logo logo-accent">Web</span><span class="logo">Studio</span></a>
-                    <button type="button" class="open-mob-menu-btn" data-modal-close tabindex="0">
+                    <button type="button" class="open-mob-menu-btn" tabindex="0">
+                        <svg class="">
+                            <use href="./sprite/sprite.svg#mob-menu-open-btn"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="mob-menu-container">
+                    <button type="button" class="close-button" tabindex="0">
                         <svg class="">
                             <use href="./sprite/sprite.svg#close-button-black-cross"></use>
                         </svg>
                     </button>
-                </nav>
-                
-                <div class="mob-pop-container">
-                    <button type="button" class="close-button" data-modal-close tabindex="0">
-                        <svg class="close-button-black-cross">
-                            <use href="./sprite/sprite.svg#close-button-black-cross"></use>
-                        </svg>
-                    </button>
 
-                    <ul class="nav-menu">
-                        <li class="nav-link"><a href="./index.html" class="link nav-text current active-line">Studio</a></li>
-                        <li class="nav-link"><a href="./portfolio.html" class="link nav-text">Portfolio</a></li>
-                        <li class="nav-link"><a href="#" class="link nav-text">Contacts</a></li>
-                    </ul>
+                    <nav class="mob-menu-nav">
+                        <a href="./index.html" class="link nav-text current active-line">Studio</a>
+                        <a href="./portfolio.html" class="link nav-text">Portfolio</a>
+                        <a href="#" class="link nav-text">Contacts</a>
+                    </nav>
     
-                    <ul class="nav-contacts">
-                        <li class="contact-item">
+                    <ul class="mob-menu-contacts">
+                        <li class="mob-menu-contact-item">
                             <a href="mailto:info@devstudio.com" class="link header-contacts">
                                 <svg class="contacts-icons" width="16" height="12">
                                     <use href="./sprite/sprite.svg#icon-a-envelope"></use>
                                 </svg>info@devstudio.com
                             </a>
                         </li>
-                        <li class="contact-item">
+                        <li class="mob-menu-contact-item">
                             <a href="tel:+380961111111" class="link header-contacts">
                                 <svg class="contacts-icons" width="10" height="16">
                                     <use href="./sprite/sprite.svg#icon-a-smartphone"></use>
@@ -84,7 +84,7 @@
                         </li>
                     </ul>
     
-                    <ul class="mob-soc-list">
+                    <ul class="mob-menu-soc-list">
                         <li class="mob soc-item"><a href="" class="soc-item-link"></a> </li>
                         <li class="mob soc-item"><a href="" class="soc-item-link"></a></li>
                         <li class="mob soc-item"><a href="" class="soc-item-link"></a></li>
