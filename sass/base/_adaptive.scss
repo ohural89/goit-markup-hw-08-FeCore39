@@ -143,3 +143,16 @@
         margin-left: 93px;
     }
 }
+
+/* potf filters POSITIONING */
+.section-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filters-btn:not(:last-child) {
+    margin-right: 8px;
+}
+/* END potf filters POSITIONING */
