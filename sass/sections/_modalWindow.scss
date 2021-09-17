@@ -80,19 +80,19 @@
 }
 
 .m-window-request-text {
-    @include custom-text-style(20px, 700, 0.03, 1.5);
+    @include custom-text-style(20px, 700, 0.03em, 1.5);
     text-align: center;
     color: var(--titles-base-color);
     margin-bottom: 12px;
 
     @media screen and (min-width:1200px) {
-        @include custom-text-style(20px, 700, 0.03, 1.6);
+        @include custom-text-style(20px, 700, 0.03em, 1.6);
     }
 }
 
 .m-window-input-label {
     position: relative;
-    @include custom-text-style(12px, 400, 0.01, 1.16);
+    @include custom-text-style(12px, 400, 0.01em, 1.16);
     
     color: var(--text-color);
     display: block;
@@ -153,7 +153,7 @@
 }
 
 .m-window-input-textarea::placeholder {
-    @include custom-text-style(12px, 400, 0.01, 1.16);
+    @include custom-text-style(12px, 400, 0.01em, 1.16);
     color: var(--text-color-transp);
 }
 
@@ -176,7 +176,7 @@
 }
 
 .m-window-terms-agreement {
-    @include custom-text-style(14px, 400, 0.03, 1.7);
+    @include custom-text-style(14px, 400, 0.03em, 1.7);
     color: var(--text-color);
     margin-left: 10px;
     

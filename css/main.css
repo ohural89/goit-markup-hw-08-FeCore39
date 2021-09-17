@@ -524,6 +524,12 @@ ol {
   align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .header-position {
+    display: none;
+  }
+}
+
 .navigation {
   display: flex;
 }
@@ -888,7 +894,7 @@ ol {
 .m-window-request-text {
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   line-height: 1.5;
   text-align: center;
   color: var(--titles-base-color);
@@ -899,7 +905,7 @@ ol {
   .m-window-request-text {
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     line-height: 1.6;
   }
 }
@@ -908,7 +914,7 @@ ol {
   position: relative;
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: 0.01;
+  letter-spacing: 0.01em;
   line-height: 1.16;
   color: var(--text-color);
   display: block;
@@ -975,7 +981,7 @@ ol {
 .m-window-input-textarea::placeholder {
   font-size: 12px;
   font-weight: 400;
-  letter-spacing: 0.01;
+  letter-spacing: 0.01em;
   line-height: 1.16;
   color: var(--text-color-transp);
 }
@@ -1001,7 +1007,7 @@ ol {
 .m-window-terms-agreement {
   font-size: 14px;
   font-weight: 400;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   line-height: 1.7;
   color: var(--text-color);
   margin-left: 10px;

@@ -15,7 +15,7 @@
 
     <body>
         <!-- HEADER -->
-        <!-- <header class="header-border">
+        <header class="header-border">
             <div class="container header-position">
                 <nav class="navigation">
                     <a href="./index.html" class="link header-logo"><span class="logo logo-accent">Web</span><span class="logo">Studio</span></a>
@@ -25,6 +25,7 @@
                         <li class="nav-link"><a href="#" class="link nav-text">Contacts</a></li>
                     </ul>
                 </nav>
+                
                 <ul class="nav-contacts">
                     <li class="contact-item">
                         <a href="mailto:info@devstudio.com" class="link header-contacts">
@@ -42,7 +43,56 @@
                     </li>
                 </ul>
             </div>
-        </header> -->
+
+            <div class="mobile-menu">
+                <nav class="mob-menu-nav">
+                    <a href="./index.html" class="link header-logo"><span class="logo logo-accent">Web</span><span class="logo">Studio</span></a>
+                    <button type="button" class="open-mob-menu-btn" data-modal-close tabindex="0">
+                        <svg class="">
+                            <use href="./sprite/sprite.svg#close-button-black-cross"></use>
+                        </svg>
+                    </button>
+                </nav>
+                
+                <div class="mob-pop-container">
+                    <button type="button" class="close-button" data-modal-close tabindex="0">
+                        <svg class="close-button-black-cross">
+                            <use href="./sprite/sprite.svg#close-button-black-cross"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="nav-menu">
+                        <li class="nav-link"><a href="./index.html" class="link nav-text current active-line">Studio</a></li>
+                        <li class="nav-link"><a href="./portfolio.html" class="link nav-text">Portfolio</a></li>
+                        <li class="nav-link"><a href="#" class="link nav-text">Contacts</a></li>
+                    </ul>
+    
+                    <ul class="nav-contacts">
+                        <li class="contact-item">
+                            <a href="mailto:info@devstudio.com" class="link header-contacts">
+                                <svg class="contacts-icons" width="16" height="12">
+                                    <use href="./sprite/sprite.svg#icon-a-envelope"></use>
+                                </svg>info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="tel:+380961111111" class="link header-contacts">
+                                <svg class="contacts-icons" width="10" height="16">
+                                    <use href="./sprite/sprite.svg#icon-a-smartphone"></use>
+                                </svg>+38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="mob-soc-list">
+                        <li class="mob soc-item"><a href="" class="soc-item-link"></a> </li>
+                        <li class="mob soc-item"><a href="" class="soc-item-link"></a></li>
+                        <li class="mob soc-item"><a href="" class="soc-item-link"></a></li>
+                        <li class="mob soc-item"><a href="" class="soc-item-link"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
         <main>
             <!-- HERO -->
@@ -496,12 +546,12 @@
             </div>
         </div>
         
-        <!-- <script defer
+        <script defer
         src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"
         ></script>
-        <script src="./scripts/mobile-menu.js"></script> -->
+        <script src="./scripts/mobile-menu.js"></script>
         <script src="./scripts/modal-window.js"></script>
     </body>
 </html>
