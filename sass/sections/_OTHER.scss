@@ -1,9 +1,4 @@
 /* POSITIONING */
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .section-filters {
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +14,3 @@
 /* COMPONENTS */
 
 /* HOVER FOCUS CURRENT */
-.nav-link .current {
-    color: var(--spec-accent-color);
-    position: relative;  
-}

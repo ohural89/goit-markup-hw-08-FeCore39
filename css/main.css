@@ -507,6 +507,11 @@ a {
   margin-right: 50px;
 }
 
+.nav-link .current {
+  color: var(--spec-accent-color);
+  position: relative;
+}
+
 .contact-item:not(:first-child) {
   margin-left: 50px;
 }
