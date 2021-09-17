@@ -674,6 +674,8 @@ a {
 
 .our-team {
   background-color: var(--spec-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team-suptitle {
