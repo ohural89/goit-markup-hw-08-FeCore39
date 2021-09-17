@@ -148,11 +148,24 @@
 .section-filters {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 60px;
     margin-bottom: 50px;
+
+    @media screen and (min-width:360px) {
+        justify-content: center;
+    }
+
+    @media screen and (min-width:768px) {
+        justify-content: center;
+    }
 }
 
-.filters-btn:not(:last-child) {
-    margin-right: 8px;
+.filters-btn {
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
 }
+
 /* END potf filters POSITIONING */
