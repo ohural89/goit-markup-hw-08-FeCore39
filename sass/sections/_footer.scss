@@ -44,7 +44,7 @@
 
 .subscr-input-style {
     color: var(--base-accent-color);
-    @include custom-text-style(16px, 400, 0.03, 1.25);
+    @include custom-text-style(16px, 400, 0.03em, 1.25);
     
     height: 50px;
     width: 290px;
@@ -74,7 +74,7 @@
 }
 
 .subscr-input-style::placeholder {
-    @include custom-text-style(16px, 400, 0.03, 1.25);
+    @include custom-text-style(16px, 400, 0.03em, 1.25);
     color: var(--footer-contact-text-color);
 
     display: flex;

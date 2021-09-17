@@ -44,7 +44,7 @@
 .nav-text,
 .header-contacts {
     position: relative;
-    @include custom-text-style(14px, 500, 0.02, 1.14);
+    @include custom-text-style(14px, 500, 0.02em, 1.14);
     padding: 32px 0;
 }
 .nav-text {

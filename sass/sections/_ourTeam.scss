@@ -19,14 +19,14 @@
 }
 
 .our-team-suptitle {
-    @include custom-text-style(16px, 500, 0.03, 1.19);
+    @include custom-text-style(16px, 500, 0.03em, 1.19);
     color: var(--titles-base-color);
 
     margin-bottom: 10px;
 }
 
 .our-team-name {
-    @include custom-text-style(16px, 400, 0.03, 1.19);
+    @include custom-text-style(16px, 400, 0.03em, 1.19);
 }
 
 .our-team-social-icons {
