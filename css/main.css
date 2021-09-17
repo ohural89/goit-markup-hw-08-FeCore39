@@ -601,10 +601,46 @@ a {
 /* END HEADER */
 /* HERO */
 .hero-section {
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgs/desk-cap/cap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0;
+  padding: 118px 0;
+}
+
+@media screen and (min-width: 360px) {
+  .hero-section {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgs/mob-cap/cap-@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 360px) and (min-device-pixel-ratio: (2, (min-resolution: 192dpi), (min-resolution: 2dppx))) {
+  .hero-section {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgs/mob-cap/cap-@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgs/tabl-cap/cap-@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: (2, (min-resolution: 192dpi), (min-resolution: 2dppx))) {
+  .hero-section {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgs/tabl-cap/cap-@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding: 200px 0;
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgs/desk-cap/cap-@1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: (2, (min-resolution: 192dpi), (min-resolution: 2dppx))) {
+  .hero-section {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imgs/desk-cap/cap-@2x.jpg);
+  }
 }
 
 .hero-wrap {
