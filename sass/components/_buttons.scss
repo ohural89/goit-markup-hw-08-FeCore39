@@ -62,6 +62,7 @@
 /* mob-menu btns */
 .open-mob-menu-btn {
     background: var(--base-accent-color);
+    @include custom-animation(fill);
 }
 
 .open-mob-menu-btn:hover,

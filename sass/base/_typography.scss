@@ -37,7 +37,8 @@
     text-transform: uppercase;
     text-align: center;
 }
-
+/* END sections typography*/
+/* footer typography*/
 .footer-address,
 .footer-contacts {
     @include custom-text-style(14px, 400, 0.03em, 1.7);
@@ -76,7 +77,8 @@
         text-align: left;
     }
 }
-
+/* END of footer typography*/
+/* mod-window typography*/
 .m-window-request-text {
     @include custom-text-style(20px, 700, 0.03em, 1.5);
     text-align: center;
@@ -112,4 +114,30 @@
         @include custom-text-style(14px, 400, 0.03em, 1.7);
     }
 }
+/* END of mod-window typography*/
+/* mob-menu typography*/
+.mob-menu-nav-text {
+    @include custom-text-style(40px, 500, 0.02em, 1.18);
+    color: var(--titles-base-color);
+}
+
+.mob-menu-nav .current {
+    color: var(--spec-accent-color);
+}
+
+.mob-menu-contact-tel {
+    @include custom-text-style(34px, 500, 0.02em, 1.18);
+    color: var(--spec-accent-color);
+}
+
+.mob-menu-contact-mail {
+    @include custom-text-style(24px, 500, 0.02em, 1.17);
+    color: var(--text-color);
+}
+
+.mob-menu-soc-text {
+    @include custom-text-style(18px, 500, 0.02em, 1.22);
+    color: var(--spec-accent-color);
+}
+/* END of mob-menu typography*/
 /* END of TYPOGRAPHY */

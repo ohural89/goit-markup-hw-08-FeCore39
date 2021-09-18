@@ -113,7 +113,7 @@ ol {
   color: var(--logo-desktop-color);
   font-size: 24px;
   font-weight: 700;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   line-height: 1.17;
   font-family: var(--spec-font);
   transition-property: color;
@@ -125,7 +125,7 @@ ol {
   .logo {
     font-size: 26px;
     font-weight: 700;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em;
     line-height: 1.19;
   }
 }
@@ -219,6 +219,9 @@ ol {
 /* mob-menu btns */
 .open-mob-menu-btn {
   background: var(--base-accent-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .open-mob-menu-btn:hover,
@@ -252,9 +255,9 @@ ol {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 320px;
+    width: 480px;
   }
 }
 
@@ -384,7 +387,7 @@ ol {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-social-wrap {
     margin-bottom: 60px;
     display: flex;
@@ -401,7 +404,7 @@ ol {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-subscr-wrap {
     display: flex;
     flex-direction: column;
@@ -415,7 +418,7 @@ ol {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer-subscr {
     width: 100%;
   }
@@ -434,7 +437,7 @@ ol {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 480px) {
   .section-filters {
     justify-content: center;
   }
@@ -514,6 +517,8 @@ ol {
   text-align: center;
 }
 
+/* END sections typography*/
+/* footer typography*/
 .footer-address,
 .footer-contacts {
   font-size: 14px;
@@ -566,6 +571,8 @@ ol {
   }
 }
 
+/* END of footer typography*/
+/* mod-window typography*/
 .m-window-request-text {
   font-size: 20px;
   font-weight: 700;
@@ -629,6 +636,45 @@ ol {
   }
 }
 
+/* END of mod-window typography*/
+/* mob-menu typography*/
+.mob-menu-nav-text {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.18;
+  color: var(--titles-base-color);
+}
+
+.mob-menu-nav .current {
+  color: var(--spec-accent-color);
+}
+
+.mob-menu-contact-tel {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.18;
+  color: var(--spec-accent-color);
+}
+
+.mob-menu-contact-mail {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.17;
+  color: var(--text-color);
+}
+
+.mob-menu-soc-text {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.22;
+  color: var(--spec-accent-color);
+}
+
+/* END of mob-menu typography*/
 /* END of TYPOGRAPHY */
 /* HEADER */
 .header-border {
@@ -1233,7 +1279,7 @@ ol {
   letter-spacing: 0.03em;
   line-height: 1.25;
   height: 50px;
-  width: 290px;
+  width: 450px;
   filter: drop-shadow(0px 4px 4px var(--input-footer-text-style));
   border: 1px solid var(--footer-subsrc-input-border);
   background: transparent;
@@ -1276,6 +1322,4 @@ ol {
 
 /* END OF FOOTER SUBSCRIPTION */
 /* END FOOTER */
-/* mob-menu typography*/
-/* END of mob-menu typography*/
 /*# sourceMappingURL=main.css.map */
