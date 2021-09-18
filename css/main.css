@@ -436,22 +436,38 @@ ol {
   }
 }
 
-/* potf filters POSITIONING */
+/* potfolio POSITIONING */
+@media screen and (max-width: 768px) {
+  .portfolio-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-section {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+}
+
 .section-filters {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 480px) {
-  .section-filters {
-    justify-content: center;
-  }
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .section-filters {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-filters {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 

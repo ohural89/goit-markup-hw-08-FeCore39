@@ -15,21 +15,22 @@
 
     <body>
         <!-- HEADER -->
-        <!-- <header class="header-border">
+        <header class="header-border">
             <div class="container header-position">
                 <nav class="navigation">
-                    <a href="./index.html" class="link header-logo"><span class="logo logo-accent">Web</span><span class="logo">Studio</span></a> -->
+                    <a href="./index.html" class="link header-logo"><span class="logo logo-accent">Web</span><span class="logo">Studio</span></a>
                     <ul class="nav-menu">
                         <li class="nav-link"><a href="./index.html" class="link nav-text">Studio</a></li>
                         <li class="nav-link"><a href="./portfolio.html" class="link nav-text current active-line">Portfolio</a></li>
                         <li class="nav-link"><a href="#" class="link nav-text">Contacts</a></li>
                     </ul>
-                <!-- </nav>
-                <ul class="list nav-contacts">
+                </nav>
+                
+                <ul class="nav-contacts">
                     <li class="contact-item">
                         <a href="mailto:info@devstudio.com" class="link header-contacts">
                             <svg class="contacts-icons" width="16" height="12">
-                                <use class="" href="./sprite/sprite.svg#icon-a-envelope"></use>
+                                <use href="./sprite/sprite.svg#icon-a-envelope"></use>
                             </svg>info@devstudio.com
                         </a>
                     </li>
@@ -42,10 +43,55 @@
                     </li>
                 </ul>
             </div>
-        </header> -->
+
+            <div class="container mobile-menu">
+                <div class="mob-menu-nav">
+                    <a href="./index.html" class="link header-logo"><span class="logo logo-accent">Web</span><span class="logo">Studio</span></a>
+                    <button type="button" class="open-mob-menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+                        <svg width="40" height="40">
+                            <use href="./sprite/sprite.svg#mob-menu-open-btn"></use>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="mob-menu-container js-menu-container" id="mobile-menu">
+                    <button type="button" class="mob-menu-close-button js-close-menu" tabindex="0">
+                        <svg width="40" height="40">
+                            <use href="./sprite/sprite.svg#mob-menu-close-btn"></use>
+                        </svg>
+                    </button>
+
+                    <nav class="mob-menu-nav">
+                        <a href="./index.html" class="link mob-menu-nav-text">Studio</a>
+                        <a href="./portfolio.html" class="link mob-menu-nav-text current">Portfolio</a>
+                        <a href="#" class="link mob-menu-nav-text">Contacts</a>
+                    </nav>
+    
+                    <ul class="mob-menu-contacts">
+                        <li class="mob-menu-contact-item">
+                            <a href="tel:+380961111111" class="link mob-menu-contact-tel">
+                                +38 096 111 11 11
+                            </a>
+                        </li>
+                        <li class="mob-menu-contact-item">
+                            <a href="mailto:info@devstudio.com" class="link mob-menu-contact-mail">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="mob-menu-soc-list">
+                        <li class="mob-menu-soc-item"><a href="#" class="link mob-menu-soc-text">Instagram</a> </li>
+                        <li class="mob-menu-soc-item"><a href="#" class="link mob-menu-soc-text">Twitter</a></li>
+                        <li class="mob-menu-soc-item"><a href="#" class="link mob-menu-soc-text">Facebook</a></li>
+                        <li class="mob-menu-soc-item"><a href="#" class="link mob-menu-soc-text">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
 
         <main>
-            <section class="section">
+            <section class="portfolio-section">
                 <div class="container">
                     <h1 class="section-title visually-hidden">Filters</h1>
                     <ul class="list section-filters">
@@ -293,5 +339,11 @@
             </div>
         </footer>
 
+        <script defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+        ></script>
+        <script src="./scripts/mobile-menu.js"></script>
     </body>
 </html>
