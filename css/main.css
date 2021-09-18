@@ -185,12 +185,67 @@ ol {
   padding: 10px 29px;
 }
 
+/* mod-window btns */
+.close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--base-accent-color);
+  width: 30px;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  border: 1px solid var(--shadows-three);
+  border-radius: 50%;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover,
+.close-button:focus {
+  fill: var(--spec-accent-color);
+  border: 1px solid var(--spec-accent-color);
+}
+
 .m-window-send-btn {
   display: block;
   margin: 0 auto;
   padding: 10px 55px;
 }
 
+/* END of mod-window btns */
+/* mob-menu btns */
+.open-mob-menu-btn {
+  background: var(--base-accent-color);
+}
+
+.open-mob-menu-btn:hover,
+.open-mob-menu-btn:focus {
+  fill: var(--spec-accent-color);
+}
+
+.mob-menu-close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--base-accent-color);
+  top: 8px;
+  right: 8px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-close-button:hover,
+.mob-menu-close-button:focus {
+  fill: var(--spec-accent-color);
+}
+
+/* END of mob-menu btns */
+/* END of buttons */
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -916,29 +971,6 @@ ol {
 .animate__bounceIn {
   animation-iteration-count: 1;
   animation-duration: 1500ms;
-}
-
-.close-button {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--base-accent-color);
-  width: 30px;
-  height: 30px;
-  top: 8px;
-  right: 8px;
-  border: 1px solid var(--shadows-three);
-  border-radius: 50%;
-  transition-property: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-button:hover,
-.close-button:focus {
-  fill: var(--spec-accent-color);
-  border: 1px solid var(--spec-accent-color);
 }
 
 /* END MODAL WINDOW */
