@@ -158,7 +158,7 @@ ol {
 .btn {
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 0.06;
+  letter-spacing: 0.06em;
   line-height: 1.88;
   color: var(--base-accent-color);
   transition-property: background-color;
@@ -511,6 +511,69 @@ ol {
   }
 }
 
+.m-window-request-text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--titles-base-color);
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .m-window-request-text {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+  }
+}
+
+.m-window-input-textarea::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.16;
+  color: var(--text-color-transp);
+}
+
+.m-window-agreement-text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  color: var(--text-color);
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .m-window-agreement-text {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+  }
+}
+
+.m-window-agreement-link {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  color: var(--spec-accent-color);
+  padding-left: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .m-window-agreement-link {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+  }
+}
+
 /* END of TYPOGRAPHY */
 /* HEADER */
 .header-border {
@@ -839,9 +902,8 @@ ol {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
+  height: 609px;
   background-color: var(--base-accent-color);
-  box-shadow: 0px 1px 3px var(--shadows-four), 0px 1px 1px var(--shadows-five), 0px 2px 1px var(--modal-window-bg);
-  border-radius: 4px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -879,50 +941,38 @@ ol {
   border: 1px solid var(--spec-accent-color);
 }
 
-.mob-window-close-btn {
-  width: 11px;
-  height: 11px;
-}
-
 /* END MODAL WINDOW */
 /* MODAL WINDOW INPUT FORM */
-.modal-input-position {
+.m-window-input-form {
+  width: 450px;
+  min-height: 609px;
+  background: var(--base-accent-color);
+  box-shadow: 0px 1px 3px var(--shadows-four), 0px 1px 1px var(--shadows-five), 0px 2px 1px var(--modal-window-bg);
+  border-radius: 4px;
   padding: 40px;
 }
 
-.m-window-request-text {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--titles-base-color);
-  margin-bottom: 12px;
-}
-
 @media screen and (min-width: 1200px) {
-  .m-window-request-text {
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.03em;
-    line-height: 1.6;
+  .m-window-input-form {
+    width: 528px;
+    height: 581px;
   }
 }
 
 .m-window-input-label {
+  display: block;
   position: relative;
+  margin-bottom: 10px;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.16;
   color: var(--text-color);
-  display: block;
-  margin-bottom: 10px;
 }
 
 .m-window-input-icon-position {
-  position: relative;
   display: block;
+  position: relative;
   margin-top: 4px;
 }
 
@@ -932,7 +982,6 @@ ol {
   border: 1px solid var(--titles-base-color-transp);
   box-sizing: border-box;
   border-radius: 4px;
-  /* margin-bottom: 28px;*/
   padding-left: 42px;
   transition-property: border-color;
   transition-duration: 250ms;
@@ -977,16 +1026,13 @@ ol {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.m-window-input-textarea::placeholder {
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1.16;
-  color: var(--text-color-transp);
-}
-
 .checkbox-container {
   margin-bottom: 30px;
+}
+
+.user-agreement-label {
+  display: flex;
+  align-items: center;
 }
 
 .m-window-custom-checkbox::before {
@@ -1001,27 +1047,6 @@ ol {
 
 .m-window-custom-checkbox::before:focus {
   border: 1px solid var(--spec-accent-color);
-}
-
-.m-window-terms-agreement {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-  line-height: 1.7;
-  color: var(--text-color);
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.agreement-position {
-  margin-left: 7px;
-}
-
-.m-window-terms-agreement-link {
-  color: var(--spec-accent-color);
-  padding-left: 4px;
 }
 
 .m-window-input-checkbox:checked + .m-window-custom-checkbox::before {

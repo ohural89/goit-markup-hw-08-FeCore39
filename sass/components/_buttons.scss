@@ -1,6 +1,6 @@
 /* buttons */
 .btn {
-    @include custom-text-style(16px, 700, 0.06, 1.88);
+    @include custom-text-style(16px, 700, 0.06em, 1.88);
     color: var(--base-accent-color);
 
     @include custom-animation(background-color);
