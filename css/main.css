@@ -1417,7 +1417,7 @@ ol {
 
 .mob-menu-soc-item {
   margin-right: 10px;
-  border-right: 1px solid var(--titles-base-color-transp);
+  border-right: 2px solid var(--titles-base-color-transp);
 }
 
 .mob-menu-soc-item:not(:first-child) {
