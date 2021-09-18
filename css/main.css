@@ -720,9 +720,13 @@ ol {
   display: flex;
 }
 
-.nav-menu,
+.nav-menu {
+  display: flex;
+}
+
 .nav-contacts {
   display: flex;
+  flex-direction: column;
 }
 
 .nav-contacts .header-contacts {
@@ -739,25 +743,47 @@ ol {
   position: relative;
 }
 
-.contact-item:not(:first-child) {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .contact-item:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
-.nav-text,
+.nav-text {
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+  color: var(--titles-base-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 32px 0;
+}
+
 .header-contacts {
   position: relative;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.14;
-  padding: 32px 0;
-}
-
-.nav-text {
   color: var(--titles-base-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    padding: 32px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts:not(:last-child) {
+    padding-bottom: 10px;
+  }
 }
 
 .active-line::after {
