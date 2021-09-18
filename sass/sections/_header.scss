@@ -13,23 +13,13 @@
         display: none;
     }
 }
-
+/* navigation menu header */
 .navigation {
     display: flex;
 }
 
 .nav-menu {
     display: flex;
-}
-
-.nav-contacts {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-contacts .header-contacts {
-    display: flex;
-    align-items: center;
 }
 
 .nav-link:not(:last-child) {
@@ -41,37 +31,6 @@
     position: relative;  
 }
 
-@media screen and (min-width:1200px) {
-    .contact-item:not(:first-child)  {
-        margin-left: 50px;
-    }
-}
-
-.nav-text {
-    position: relative;
-    @include custom-text-style(14px, 500, 0.02em, 1.14);
-    color: var(--titles-base-color);
-    @include custom-animation(color);
-    padding: 32px 0;
-}
-
-.header-contacts {
-    position: relative;
-    @include custom-text-style(14px, 500, 0.02em, 1.14);
-    color: var(--titles-base-color);
-    @include custom-animation(color);
-
-    @media screen and (min-width:1200px) {
-        padding: 32px 0;
-    }
-}
-
-.header-contacts:not(:last-child)  {
-    @media screen and (min-width:768px) {
-        padding-bottom: 10px;
-    }
-}
-
 .active-line::after {
     display: block;
     position: absolute;
@@ -81,6 +40,20 @@
     background-color: var(--spec-accent-color);
     border-radius: 2px;
     bottom: -2px;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        bottom: -1px;
+    }
+}
+/* END of navigation menu header */
+
+/* navigation contacts header */
+.nav-contacts {
+    display: flex;
+
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        flex-direction: column;
+    }
 }
 
 .contact-item {
@@ -88,10 +61,16 @@
     align-items: center;
 }
 
-.header-contacts {
-    color: inherit;
-    
-    @include custom-animation(color);
+.contact-item:not(:first-child)  {
+    @media screen and (min-width:1200px) {
+        margin-left: 50px;
+    }
+}
+
+.contact-item:not(:last-child)  {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        padding-bottom: 10px;
+    }
 }
 
 .contacts-icons {
@@ -101,8 +80,9 @@
     @include custom-animation(fill);
 }
 
-.header-contacts:hover .contacts-icons,
-.header-contacts:focus .contacts-icons{
+.header-contacts-text:hover .contacts-icons,
+.header-contacts-text:focus .contacts-icons{
     fill: var(--spec-accent-color);
 }
+/* END of navigation contacts header */
 /* END HEADER */

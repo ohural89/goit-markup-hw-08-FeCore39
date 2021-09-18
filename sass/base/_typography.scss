@@ -4,6 +4,27 @@
     color: var(--spec-accent-color);    
 }
 
+/* header nav-menu-&-contacts text styles */
+.nav-text {
+    position: relative;
+    @include custom-text-style(14px, 500, 0.02em, 1.14);
+    color: var(--titles-base-color);
+    @include custom-animation(color);
+    padding: 32px 0;
+}
+
+.header-contacts-text {
+    position: relative;
+    @include custom-text-style(14px, 500, 0.02em, 1.14);
+    color: var(--text-color);
+    @include custom-animation(color);
+
+    @media screen and (min-width:1200px) {
+        padding: 32px 0;
+    }
+}
+/* END of header nav-menu-&-contacts text styles */
+
 .section-title {
     color: var(--titles-base-color);
     margin-bottom: 50px;
