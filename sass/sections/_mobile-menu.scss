@@ -4,4 +4,20 @@
     justify-content: space-between;
 }
 
+.mob-menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+    background-color: var(--base-accent-color);
+
+    transform: translateX(100%);
+    @include custom-animation(transform);
+}
+
+.mob-menu-container.is-open {
+    transform: translateX(0);
+}
 /* END of mob menu */

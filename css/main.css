@@ -1334,5 +1334,23 @@ ol {
   justify-content: space-between;
 }
 
+.mob-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  background-color: var(--base-accent-color);
+  transform: translateX(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-container.is-open {
+  transform: translateX(0);
+}
+
 /* END of mob menu */
 /*# sourceMappingURL=main.css.map */
