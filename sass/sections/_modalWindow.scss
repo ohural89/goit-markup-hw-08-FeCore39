@@ -57,15 +57,14 @@
     border: 1px solid var(--spec-accent-color);
 }
 
-.close-button-black-cross {
+.mob-window-close-btn {
     width: 11px;
     height: 11px;
 }
-
-
 /* END MODAL WINDOW */
+
 /* MODAL WINDOW INPUT FORM */
-// .m-window-input-form { !!!!!!!!!!!!!!!!!?????????
+// .m-window-input-form {
 //     width: 528px;
 //     min-height: 581px;
 //     background: var(--base-accent-color);
@@ -75,6 +74,7 @@
 //         0px 2px 1px var(--m-window-color-three);
 //     border-radius: 4px;
 // }
+
 .modal-input-position {
     padding: 40px;
 }
