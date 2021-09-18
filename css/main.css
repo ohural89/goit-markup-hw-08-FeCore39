@@ -338,6 +338,12 @@ ol {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .what-we-do {
     display: none;
@@ -1322,4 +1328,11 @@ ol {
 
 /* END OF FOOTER SUBSCRIPTION */
 /* END FOOTER */
+/* mob menu */
+.mob-menu-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* END of mob menu */
 /*# sourceMappingURL=main.css.map */
