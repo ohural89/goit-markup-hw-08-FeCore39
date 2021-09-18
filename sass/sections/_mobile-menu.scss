@@ -1,5 +1,5 @@
 /* mob menu */
-.mob-menu-nav {
+.mob-menu-nav-wrap {
     display: flex;
     justify-content: space-between;
 }
@@ -15,9 +15,42 @@
 
     transform: translateX(100%);
     @include custom-animation(transform);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 40px;
 }
 
 .mob-menu-container.is-open {
     transform: translateX(0);
+}
+
+.mob-menu-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.mob-menu-soc-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.mob-menu-soc-item {
+    margin-right: 10px;
+    // border-right: 1px solid var(--titles-base-color-transp);
+
+    &:not(:first-child) {
+        margin-left: 10px;
+    }
+}
+
+.vertical-line::after {
+    display: block;
+    content: " ";
+    width: 22px;
+    height: 0;
+    color: var(--titles-base-color-transp);
+    transform: rotate(90deg);
 }
 /* END of mob menu */

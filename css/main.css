@@ -699,6 +699,7 @@ ol {
   letter-spacing: 0.02em;
   line-height: 1.18;
   color: var(--titles-base-color);
+  padding-bottom: 32px;
 }
 
 .mob-menu-nav .current {
@@ -711,6 +712,7 @@ ol {
   letter-spacing: 0.02em;
   line-height: 1.18;
   color: var(--spec-accent-color);
+  padding-bottom: 32px;
 }
 
 .mob-menu-contact-mail {
@@ -1376,7 +1378,7 @@ ol {
 /* END OF FOOTER SUBSCRIPTION */
 /* END FOOTER */
 /* mob menu */
-.mob-menu-nav {
+.mob-menu-nav-wrap {
   display: flex;
   justify-content: space-between;
 }
@@ -1393,10 +1395,41 @@ ol {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
 }
 
 .mob-menu-container.is-open {
   transform: translateX(0);
+}
+
+.mob-menu-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.mob-menu-soc-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.mob-menu-soc-item {
+  margin-right: 10px;
+}
+
+.mob-menu-soc-item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.vertical-line::after {
+  display: block;
+  content: " ";
+  width: 22px;
+  height: 0;
+  color: var(--titles-base-color-transp);
+  transform: rotate(90deg);
 }
 
 /* END of mob menu */

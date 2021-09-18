@@ -140,6 +140,7 @@
 .mob-menu-nav-text {
     @include custom-text-style(40px, 500, 0.02em, 1.18);
     color: var(--titles-base-color);
+    padding-bottom: 32px;
 }
 
 .mob-menu-nav .current {
@@ -149,6 +150,7 @@
 .mob-menu-contact-tel {
     @include custom-text-style(34px, 500, 0.02em, 1.18);
     color: var(--spec-accent-color);
+    padding-bottom: 32px;
 }
 
 .mob-menu-contact-mail {
