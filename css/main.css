@@ -515,6 +515,8 @@ ol {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -526,7 +528,7 @@ ol {
 /* END of header nav-menu-&-contacts text styles */
 .section-title {
   color: var(--titles-base-color);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-size: 28px;
   font-weight: 700;
@@ -540,6 +542,7 @@ ol {
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -801,11 +804,6 @@ ol {
   .nav-contacts {
     flex-direction: column;
   }
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1434,11 +1432,8 @@ ol {
   flex-direction: row;
 }
 
-.mob-menu-soc-item {
-  border-right: 2px solid var(--titles-base-color-transp);
-}
-
 .mob-menu-soc-item:not(:last-child) {
+  border-right: 2px solid var(--titles-base-color-transp);
   margin-right: 10px;
   padding-right: 10px;
 }
