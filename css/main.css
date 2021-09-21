@@ -274,8 +274,15 @@ ol {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-list {
@@ -437,11 +444,9 @@ ol {
 }
 
 /* potfolio POSITIONING */
-@media screen and (max-width: 768px) {
-  .portfolio-section {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
+.portfolio-section {
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -549,7 +554,7 @@ ol {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .features-suptitle {
     text-align: left;
   }
@@ -777,7 +782,7 @@ ol {
   height: 4px;
   background-color: var(--spec-accent-color);
   border-radius: 2px;
-  bottom: -2px;
+  bottom: -4px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -910,8 +915,15 @@ ol {
 /* END HERO */
 /* FEATURES */
 .features-section {
-  padding-top: 94px;
-  padding-bottom: 47px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .features-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 
 .features-icon-wrp {
@@ -951,8 +963,15 @@ ol {
 
 .our-team {
   background-color: var(--spec-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team-suptitle {
@@ -1416,12 +1435,12 @@ ol {
 }
 
 .mob-menu-soc-item {
-  margin-right: 10px;
   border-right: 2px solid var(--titles-base-color-transp);
 }
 
-.mob-menu-soc-item:not(:first-child) {
-  margin-left: 10px;
+.mob-menu-soc-item:not(:last-child) {
+  margin-right: 10px;
+  padding-right: 10px;
 }
 
 /* END of mob menu */
